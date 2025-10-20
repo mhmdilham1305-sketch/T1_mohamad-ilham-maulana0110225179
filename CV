@@ -1,0 +1,141 @@
+from IPython.display import HTML
+from google.colab import files
+cv_html = """
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>CV Mohammad ilham maulana </title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f9f9f9;
+      color: #333333;
+      margin: 0;
+      padding: 40px;
+    }
+    .container {
+      max-width: 750px;
+      background: #ffffff;
+      padding: 40px;
+      margin: auto;
+      border-radius: 20px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      border-top: 8px solid #555555;
+      position: relative;
+    }
+    .profile-pic {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      position: absolute;
+      top: 40px;
+      right: 40px;
+      border: 3px solid #555555;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    h1 {
+      color: #000000;
+      font-size: 36px;
+      margin-bottom: 5px;
+      font-weight: 600;
+    }
+    h2 {
+      color: #555555;
+      border-left: 4px solid #555555;
+      padding-left: 10px;
+      font-size: 20px;
+      margin-bottom: 10px;
+      margin-top: 30px;
+      font-weight: 600;
+    }
+    p, li {
+      line-height: 1.6;
+      font-size: 15px;
+    }
+    .info {
+      background-color: #f3f3f3;
+      padding: 15px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+    .info strong {
+      color: #555555;
+    }
+    ul {
+      padding-left: 20px;
+      margin: 0;
+    }
+    .tagline {
+      color: #666;
+      font-style: italic;
+      font-size: 15px;
+      margin-top: 0;
+    }
+    .gradient-bar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 8px;
+      width: 100%;
+      background: linear-gradient(90deg, #444444, #555555, #666666);
+      border-radius: 8px 8px 0 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="gradient-bar"></div>
+
+    <img src="/content/1759070928907.jpg" class="profile-pic" alt="Foto Ilham">
+    <h1> Mohammad Ilham maulana </h1>
+    <p class="tagline">Informatics Engineering Student | STT Terpadu Nurul Fikri</p>
+
+    <div class="info">
+      <p><strong>Email:</strong> mhmdilham1305@gmail.com</p>
+      <p><strong>No. HP:</strong> 0852-1250-2846</p>
+      <p><strong>Address:</strong> Jl. Kh halimi, Rt 03/01, Kecamatan Bogor, Bogor Selatan, Jawa Barat</p>
+    </div>
+
+    <h2>PROFILE</h2>
+    <p>A flexible, adaptable, and highly curious student. She enjoys trying new things and always strives to achieve her best in every opportunity, both on campus and in the workplace.</p>
+
+    <h2>EDUCATION</h2>
+    <ul>
+      <li><strong>Bachelor of Informatics Engineering (2025 - Present)</strong></li>
+      <li><strong>State sma negeri 1 cijeruk— Science (2021 - 2024)</strong></li>
+    </ul>
+
+    <h2>EXPERIENCE</h2>
+    <ul>
+      <li>Contract Employee — PT Haengnam Sejahtera Indonesia (June 2024 – August 2024)</li>
+      <li>Barista — Matuju Coffee & Kitchen (November 2024 - May 2025)</li>
+    </ul>
+
+    <h2>SKILL</h2>
+    <ul>
+      <li>Communication</li>
+      <li>HTML & CSS</li>
+      <li>Teamwork</li>
+    </ul>
+
+    <h2>HOBBY</h2>
+    <ul>
+      <li>Swim</li>
+      <li>Playing the guitar</li>
+      <li>Listening to music</li>
+    </ul>
+  </div>
+</body>
+</html>
+"""
+
+# Tampilkan CV
+display(HTML(cv_html))
+
+# Simpan file HTML
+with open("cv_ilham_abu_foto.html", "w") as f:
+    f.write(cv_html)
